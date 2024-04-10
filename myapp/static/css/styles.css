@@ -1,0 +1,51 @@
+body{
+    font-family: Roboto;
+    color:#ffff;
+    background-color: purple;
+}
+
+.caixa{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nome input{
+    border-radius: 15px;
+    border:none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color:white;
+}
+
+.cpf input{
+    border-radius: 15px;
+    border:none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color:white;
+    margin-top:15px;
+}
+
+.data input{
+    border-radius: 15px;
+    border:none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color:white;
+    margin-top: 15px;
+}
+
+.botao button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
