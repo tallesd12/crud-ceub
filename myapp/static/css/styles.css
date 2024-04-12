@@ -1,14 +1,19 @@
 body{
     font-family: Roboto;
     color:#ffff;
-    background-color: purple;
+    background-color: #27296d;
 }
 
+h1{
+    font-size: 40px;
+}
 .caixa{
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 15%;
+
 }
 
 .nome input{
@@ -46,6 +51,33 @@ body{
 .botao button{
     width: 120px;
     height: 40px;
+    border: none;
     border-radius: 20px;
     margin-top: 15px;
+    background-color:#5f5dbd;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+.especialidade_div select{
+    border-radius: 15px;
+    border:none;
+    width: 265px;
+    height: 40px;
+    padding:10px;
+    background-color: #1e1c2e;
+    color:gray;
+    margin-top:15px;
+    
+
+}
+
+.select ::after{
+    position: absolute;
+    padding-right: 0 1em;
 }
