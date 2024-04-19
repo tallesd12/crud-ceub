@@ -2,10 +2,10 @@ from django.db import models
 
 class Pessoa(models.Model):
     nome = models.CharField(max_length = 30)
-    cpf = models.IntegerField()
+    cpf = models.CharField(max_length = 30)
     data = models.DateField()
-    especialidade= models.CharField(max_length = 30, null=True)
+    especialidade= models.CharField(max_length = 30)
 
 
     def __str__(self):
-        return self.nome
+        return self.cpf

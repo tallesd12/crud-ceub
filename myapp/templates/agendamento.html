@@ -4,50 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link href ={% static 'css/styles.css' %} rel="stylesheet">
+    <link href ="{% static 'css/styles.css' %}" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div id="login">
+        
+        <form action="{% url 'views.agendados' %}" method="post">
+            {% csrf_token %}
 
-        <div class="caixa">
-            
-            
-            <h1>AGENDE AQUI</h1>
+            <div class="caixa">
+                
+                
+                <h1>Agendamentos</h1>
 
-            <div class="nome">
-                <input type="text" placeholder="Nome">
+                <div class="nome">
+                    <input type="text" name="nome" placeholder="Nome">
+                </div>
+
+                <div class="cpf">
+                    <input type="text" name="cpf" placeholder="CPF">
+                </div>
+
+                <div class="especialidade_div"> 
+                    <select id="especialidade" name="especialidade">
+                    <option selected disabled>Especialidade</option>
+                    <option value="Ortopedista">Ortopedista</option>
+                    <option value="Pediatria">Pediatria</option>
+                    <option value="Cardiologista">Cardiologista</option>
+                    <option value="Endócrino">Endócrino</option>
+                    <option value="Clínico-Geral">Clínico-Geral</option>
+                    <option value="Neurologista">Neurologista</option>
+                    <option value="Cirurgião">Pediatria</option>
+                    <option value="Oftalmologista">Oftalmologista</option>
+                    </select>
+                </div>
+
+                <div class="data">
+                    <input type="date" name="data" placeholder="data">
+                </div>
+
+                <div class="botao">
+                    <button>Agendar</button>
+                </div>
+
+
             </div>
 
-            <div class="cpf">
-                <input type="text" placeholder="CPF">
-            </div>
-
-            <div class="especialidade_div"> 
-                <select id="especialidade" name="especialidade">
-                <option selected disabled>Especialidade</option>
-                <option value="Ortopedista">Ortopedista</option>
-                <option value="Pediatria">Pediatria</option>
-                <option value="Cardiologista">Cardiologista</option>
-                <option value="Endócrino">Endócrino</option>
-                <option value="Clínico-Geral">Clínico-Geral</option>
-                <option value="Neurologista">Neurologista</option>
-                <option value="Cirurgião">Pediatria</option>
-                <option value="Oftalmologista">Oftalmologista</option>
-                </select>
-            </div>
-
-            <div class="data">
-                <input type="date" placeholder="data">
-            </div>
-
-            <div class="botao">
-                <button>Agendar</button>
-            </div>
-
-
-        </div>
-
+        </form>
     </div>
     
     
