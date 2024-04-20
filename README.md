@@ -13,6 +13,8 @@ Eu criei 2 interfaces, a primeira de cadastro, onde tem todos os inputs para o u
 #MODELS
 Todos os usuários cadastrados são armazenados na área administrativa do Django com o CPF como identificador único, possibilitando sua exclusão. Os dados que são cadastrados nessa área administrativa são encaminhados para uma página onde retorna-os em formato JSON.
 
+Para realizar o funcionamento da aplicação é necessário ativar um servidor local, utilizando o comando 'python manage.py runserver' e logo em seguida colocar os end-points de cada interface.
+
 #TECNOLOGIAS UTILIZADAS
 -Python
 -Django
